@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.0.0",
+  "autonomy_policy": {
+    "plc_write_allowed": false,
+    "max_agent_hops": 3,
+    "overreach_confidence_penalty": 0.40,
+    "auto_close_allowed_tiers": ["TIER_1_AUTONOMOUS"]
+  },
+  "facility_capabilities": {
+    "has_solar": true,
+    "has_dg": true,
+    "has_tes": false
+  },
+  "power_thresholds": {
+    "grid_voltage_min_v": 370.0,
+    "grid_voltage_max_v": 455.0,
+    "phase_imbalance_max_pct": 3.0,
+    "anti_islanding_max_sec": 2.0,
+    "ats_switchover_grace_sec": 30,
+    "compressor_stagger_sec": 25,
+    "dg_rated_kva": 125.0,
+    "dg_power_factor": 0.8,
+    "dg_safe_load_max_pct": 80.0,
+    "dg_load_shed_trigger_pct": 85.0,
+    "dg_burn_rate_lph": 20.5,
+    "dg_fuel_reminder_hrs": 6.0,
+    "dg_fuel_critical_hrs": 4.0,
+    "solar_min_active_ratio": 0.15
+  },
+  "sanity_gate": {
+    "max_packet_age_sec": 900,
+    "flatline_window_ticks": 6,
+    "flatline_min_std_dev": 0.001
+  },
+  "closure_gate": {
+    "required_stable_ticks": 3,
+    "require_non_rising_slope": true
+  },
+  "compliance_standards": {
+    "nccd_refrigerant_gwp_max": 1500,
+    "fssai_danger_zone_min_c": 5.0,
+    "fssai_danger_zone_max_c": 60.0,
+    "fssai_danger_zone_max_min": 120,
+    "cea_anti_islanding_reg": "CEA Reg 11(6)(e) / IS 16169"
+  },
+  "chambers": {
+    "CH-01_SEAFOOD": {
+      "commodity": "Frozen Export Seafood",
+      "regulator": "MPEDA / EIC",
+      "temp_min_c": -25.0,
+      "temp_max_c": -18.0,
+      "irreversible_spoilage_c": -12.0,
+      "spoilage_grace_min": 30,
+      "max_drift_c_per_hr": 0.5,
+      "defrost_max_duration_min": 12,
+      "defrost_max_spike_c": 5.0,
+      "triage_priority": 2,
+      "load_shed_allowed": false
+    },
+    "CH-02_VACCINES": {
+      "commodity": "Biologics & Vaccines",
+      "regulator": "CDSCO / WHO-GDP",
+      "temp_min_c": 2.0,
+      "temp_max_c": 8.0,
+      "irreversible_spoilage_c": 12.0,
+      "irreversible_freeze_c": 0.0,
+      "spoilage_grace_min": 0,
+      "max_drift_c_per_hr": 0.3,
+      "defrost_max_duration_min": 8,
+      "defrost_max_spike_c": 1.5,
+      "triage_priority": 1,
+      "load_shed_allowed": false
+    },
+    "CH-03_HORTICULTURE": {
+      "commodity": "Fresh Fruits & Vegetables (NCCD Type-II)",
+      "regulator": "FSSAI Schedule 4 / NCCD 2025",
+      "temp_min_c": 2.0,
+      "temp_max_c": 13.0,
+      "rh_min_pct": 85.0,
+      "rh_max_pct": 90.0,
+      "irreversible_spoilage_c": 20.0,
+      "irreversible_freeze_c": -0.5,
+      "spoilage_grace_min": 120,
+      "max_drift_c_per_hr": 1.0,
+      "defrost_max_duration_min": 15,
+      "defrost_max_spike_c": 5.0,
+      "triage_priority": 3,
+      "load_shed_allowed": true
+    }
+  }
+}

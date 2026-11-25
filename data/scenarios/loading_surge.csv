@@ -1,0 +1,6 @@
+elapsed_min,chamber_id,temp_c,rh_pct,nh3_ppm,defrost_relay,door_switch,grid_v,phase_imbalance_pct,solar_kw,grid_outage_sec,dg_status,dg_load_kw,dg_fuel_liters
+0,CH-03_HORTICULTURE,6.0,86.0,0.0,0,0,415.0,0.6,68.0,0,OFF,0.0,180.0
+2,CH-03_HORTICULTURE,7.2,89.0,0.0,0,1,414.5,0.7,67.5,0,OFF,0.0,180.0
+4,CH-03_HORTICULTURE,8.6,92.0,0.0,0,1,415.2,0.6,68.2,0,OFF,0.0,180.0
+6,CH-03_HORTICULTURE,9.8,93.5,0.0,0,1,414.8,0.7,67.8,0,OFF,0.0,180.0
+8,CH-03_HORTICULTURE,10.5,94.0,0.0,0,1,415.0,0.6,68.0,0,OFF,0.0,180.0
