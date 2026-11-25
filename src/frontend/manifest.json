@@ -1,0 +1,22 @@
+{
+  "name": "ZeroDrift — Industrial Cold-Chain Supervisor",
+  "short_name": "ZeroDrift",
+  "description": "Read-only bounded agentic post-alarm triage and verified thermal recovery for Indian cold storages.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='80' y1='80' x2='432' y2='432' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232dd4bf'/%3E%3Cstop offset='1' stop-color='%2334d399'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='144' fill='%2318181b'/%3E%3Crect x='12' y='12' width='488' height='488' rx='132' stroke='rgba(255,255,255,0.08)' stroke-width='8'/%3E%3Cpath d='M256 128v256M152 188l208 136M360 188L152 324' stroke='url(%23g)' stroke-width='26' stroke-linecap='round'/%3E%3Ccircle cx='256' cy='256' r='68' fill='%2309090b' stroke='url(%23g)' stroke-width='26'/%3E%3Cpath d='M180 256h40m72 0h40' stroke='%23fbbf24' stroke-width='24' stroke-linecap='round'/%3E%3Ccircle cx='256' cy='256' r='19' fill='%232dd4bf'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Run Judge Tour", "short_name": "Judge Tour", "url": "/?action=tour", "description": "Run full demo tour" },
+    { "name": "Simulate Unknown Leak", "short_name": "Unknown Leak", "url": "/?action=unknown_leak", "description": "Simulate unknown leak escalation" }
+  ]
+}
