@@ -41,6 +41,22 @@ ZeroDrift is designed for Indian field reality:
 
 ---
 
+## Screenshots
+
+| Landing / Command Center | Incident Detail / ReAct Trace |
+|---|---|
+| ![ZeroDrift landing page](screenshots/landing-page.png) | ![ZeroDrift loading surge incident](screenshots/loading-surge.png) |
+
+| Thermal Leak / HITL Escalation | Working Procedure / Gate Flow |
+|---|---|
+| ![ZeroDrift thermal leak escalation](screenshots/thermal-leak.png) | ![ZeroDrift working procedure](screenshots/working-procedure.png) |
+
+| Verified Memory / Audit Trail |
+|---|
+| ![ZeroDrift agent memory and audit](screenshots/agent-memory.png) |
+
+---
+
 ## 3-Tier Autonomy
 
 | Tier | Examples | Closure |
@@ -58,6 +74,12 @@ ZeroDrift is designed for Indian field reality:
 ├── README.md
 ├── pyproject.toml
 ├── uv.lock
+├── screenshots/
+│   ├── landing-page.png
+│   ├── loading-surge.png
+│   ├── thermal-leak.png
+│   ├── working-procedure.png
+│   └── agent-memory.png
 ├── data/
 │   ├── scenarios/                 # loading_surge, stuck_defrost, solar_eb_outage, unknown_leak
 │   └── sops/
